@@ -38,16 +38,17 @@ home.
 ## Install
 
 ```bash
-npm install @thefibre/constellation
+npm install github:thefibre/constellation
 ```
 
+It builds itself on install. (An npm package, `@thefibre/constellation`, is planned.)
 React 18 or later. No other runtime dependencies; it draws plain SVG.
 
 ## Use
 
 ```tsx
 import { useMemo, useState } from 'react';
-import { Constellation } from '@thefibre/constellation';
+import { Constellation } from '@thefibre/constellation'; // the package name, whichever way it was installed
 
 function Web() {
   const [center, setCenter] = useState({ id: 'mira', label: 'Mira Okafor' });

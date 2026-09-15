@@ -23,6 +23,7 @@
   "sideEffects": false,
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
+    "prepare": "tsc -p tsconfig.build.json",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
     "dev": "vite demo",
