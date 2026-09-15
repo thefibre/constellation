@@ -1,0 +1,44 @@
+{
+  "name": "@thefibre/constellation",
+  "version": "0.1.0",
+  "description": "A moving web of relations for React: one thing in the middle, its connections floating around it, gentle depth, drag and glide. Designed by The Thread.",
+  "license": "MIT",
+  "author": "The Thread (https://thethread.app)",
+  "homepage": "https://thefibre.github.io/constellation/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thefibre/constellation.git"
+  },
+  "keywords": ["react", "graph", "network", "relations", "force-layout", "svg", "visualisation"],
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "dev": "vite demo",
+    "build:demo": "vite build demo --base=/constellation/ --outDir ../site --emptyOutDir"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.8"
+  }
+}

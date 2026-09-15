@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Constellation — a moving web of relations</title>
+    <style>
+      :root { color-scheme: light; font-family: ui-sans-serif, system-ui, -apple-system, 'Inter', sans-serif; }
+      body { margin: 0; background: #f7f7f5; color: #111827; }
+      main { max-width: 1200px; margin: 0 auto; padding: 32px 20px 48px; }
+      h1 { font-size: 28px; font-weight: 600; margin: 0; }
+      p { color: #4b5563; max-width: 640px; line-height: 1.55; }
+      .stage { margin-top: 20px; background: #ffffff; border: 1px solid #e5e7eb; border-radius: 12px; overflow: hidden; }
+      .row { display: flex; gap: 12px; align-items: center; margin-top: 16px; font-size: 14px; color: #4b5563; flex-wrap: wrap; }
+      button { font: inherit; border: 1px solid #d1d5db; background: #fff; border-radius: 6px; padding: 6px 12px; cursor: pointer; }
+      code { background: #eef0f2; padding: 1px 5px; border-radius: 4px; font-size: 13px; }
+      a { color: #111827; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Constellation</h1>
+      <p>
+        A moving web of relations. Click a name to bring it to the middle. Point at anything to see what
+        it is connected to. Drag a name out of the cloud and let go — it drifts home. The people here are
+        made up.
+      </p>
+      <div id="root"></div>
+      <p style="margin-top:28px">
+        <code>npm install @thefibre/constellation</code> ·
+        <a href="https://github.com/thefibre/constellation">Source on GitHub</a> · MIT ·
+        Designed by <a href="https://thethread.app">The Thread</a>
+      </p>
+    </main>
+    <script type="module" src="./main.tsx"></script>
+  </body>
+</html>
